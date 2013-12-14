@@ -99,6 +99,7 @@ urlpatterns = patterns('',
     (r'^tinymce/', include('tinymce.urls')),
     (r'^suggestions/', include('suggestions.urls')),
     url(r'^feedback/', post_feedback, name="feedback-post"),
+    (r'^edittags/', include('edittags.urls')),
 )
 
 
